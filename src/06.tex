@@ -1,0 +1,415 @@
+\documentclass[]{article}
+\usepackage{amsmath}
+
+%opening
+\title{Matematica - appunti}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\section{Guida alla lettura}
+Alcune definizioni hanno accanto al simbolo D un nome tra parentesi, \`e la bibliografia tranne quando trovate (baudo) che sono le definizioni come le darei io e pertanto. Ovviamente, diffidate di queste ultime perch\`e sono frutto del mio ragionamento e non hanno alcun fondamento logico formale e rigoroso.
+	\begin{itemize}
+		\item A - Axiom
+		\item B - Bibliography
+		\item App - Application !!!
+		\item C - Corollary
+		\item Cit. - Citazione
+		\item D - Definition
+		\item E - Esempio / Esercizio
+		\item I - Idea / Intuition / Intro
+		\item L - Lemma
+		\item N - Notation
+		\item O - Osservazione
+		\item P - Proposition
+		\item Q - Question (come from learning process)
+		\item R - Riassunto
+		\item S - Skills / Syllabus
+		\item T - Theorem	
+		\item V - Verifica / Proof.
+	\end{itemize}
+
+\section{Geometria e Algebra}
+
+\subsection{Geometria affine}
+\begin{enumerate}
+	\item I - sernesi 1 - In questo paragrafo introdurremo gli "spazi affini", che generalizzano il piano e lo spazio ordinari, e nei quali lo spazio dei vettori \`e assegnato nella definizione.
+	\item I - baudo - Ok la prima parte del punto precedente, mi torna che gli spazi affini generalizzano il piano e lo spazio ordinari in quanto le idee usate in due e tre dimensioni vengono estese ed utilizzate negli spazi n-dimensionali. 
+	                  Osserviamo che la teoria viene impostata usando la teoria degli insiemi. 
+	\item I - baudo - 
+\end{enumerate}
+
+\begin{enumerate}
+	%% AXIOMS
+	\item A - Cose uguali sono uguali
+	\item A - Assiomi della geometria euclidea
+	\item A - Assiomi di hilbert
+	\item A - Assiomi della teoria degli insiemi
+	\item A - Assiomi di peano
+	\item A - Assiomi di $R$
+	\item A - Assioma di Dedekind
+	\item I - Idea dietro all'assioma di Dedekind \\
+			  \`E semplicemente assurdo!!!
+
+	%% MATRICES
+	\item I - matrix
+	\item row and column of matrix
+	\item product, sum, scalar product		
+	\item null matrix (is the same as zero matrix?)
+	\item matrix units
+	\item square matrix
+	\item ordine di una matrice quadrata \\
+	      Sia $A$ una matrice quadrata $n \times n$, il numero $n$ si chiama ordine della matrice (quadrata). 
+	\item identity matrix		
+	\item properties of matrix operations
+	\item D - inverse of a matrix \\
+		  Let $A$ be a (square) $n \times n$ matrix. If there is a matrix $B$ such that $AB=I_n$ and $BA=I_n$, then $B$ is called an inverse of $A$ and is denoted by $A^{-1}$: $A^{-1}A=I=AA^{-1}$.
+	\item D - invertible matrix \\
+	      A matrix $A$ that has an inverse is called an invertible matrix.
+	\item elementary matrices
+	\item elementary operations \\
+		  Sono importanti perch\`e 1) non cambiano il rango e 2) non cambiano le soluzioni di un sistema di equazioni lineari.
+	\item row echelon matrix
+	\item matrix transpose 
+	\item Sets of all matrices. $M_{m,n}(K)$
+	\item Sets of all square matrices. $M_n(K)$
+	\item Sets of all invertible matrices. $GL_n(K)$
+	\item equations
+	\item homogeneous equations
+	\item system of equation/homogeneous equations	
+
+	%% PROPOSIZIONI SULLE MATRICI DA SISTEMARE	
+\item Lemma 1.1.15 - The inverse of a square matrix, if exists, is unique.
+
+\item Proposition 1.1.16 - L'inversa del prodotto is equals to il prodotto delle inverses prese in ordine inverso. (Sia nel caso di due matrici e che di n matrici).
+
+\item L - Matrice con riga o colonna nulla e invertibilit\`a. 
+      Mette in relazione una matrice che ha (almeno) una riga nulla o (almeno) una colonna nulla o entrambe le cose e il concetto di invertibilit\`a. \\          
+      Lemma 1.1.18 - If there is a row of zero or a column of zero then the matrix (square) is not invertible. \\
+      proof.: si dimostra moltiplicando la matrice che ha lo zero con una qualunque altra matrice allora la matrice risultante avr\`a sempre una corrispondente riga nulla, pertanto non \`e la matrice identit\`a e pertanto nessuna matrice che ha una o pi\`u righe nulle \`e invertibile. Allora per completezza dovrei formalizzare/spiegare come funziona il prodotto tra matrici.
+
+\item Lemma 1.2.6 Elementary matrices area invertible, and their inverses are also elementary matrices.
+
+\item Proposition 1.2.10 - $A'X=B'$ e $AX=B$ hanno le stesse soluzioni.
+
+\item Proposition 1.2.13 - Il sistema $A'X=B'$ has solutions if there is no pivot in the last column $B'$.
+
+\item Corollary 1.2.14 - Every system $AX=0$ of $m$ homogeneous equations in $n$ unknowns, with $m<n$, has solution $X$ in which some $x_i$ is nonzero.
+
+\item Lemma 1.2.15 - A square row echelon matrix $M$ is either the identity matrix $I$, or else its bottom row is zero.
+
+\item Theorem 1.2.16 - 
+
+\item Corollary 1.2.17
+
+\item Proposition 1.2.20
+
+\item Theorem 1.2.21 Square Systems.
+
+\item Theorem 1.4.7 Uniqueness of the Determinant.
+
+\item Theorem 1.4.9 Multiplicative Property of the Determinant. For any $n \times n$ matrices $A$ and $B$, $det(AB)=det(A)det(B)$
+
+\item Theorem 1.4.10 
+
+\item Corollary 1.4.15
+
+\item Proposition 1.5.10
+
+\item Theorem 1.6.9			  
+			  
+	%% SPAZI VETTORIALI
+	\item D - Spazio vettoriale
+	\item C - Combinazione lineare
+	\item C - Coefficienti della combinazione lineare
+	\item C - Sistema di coordinate da quel libro blu che parla solo di matrici
+	\item C - Sistema di generatori
+	\item C - Somma diretta di sottospazi
+	\item C - Sottospazio generato da un insieme di vettori
+	\item D - Sottospazio vettoriale \\
+			  Un sottoinsieme non vuoto $W$ di $V$ si dice sottospazio vettoriale di $V$ se:
+			  \begin{enumerate}
+			  	\item per ogni $w_1, w_2 \in W$, la somma $w_1+w_2$ appartiene a $W$;
+			  	\item per ogni $w \in W$ e per ogni $c \in K$, il prodotto $cw$ appartiene a $W$.
+			  \end{enumerate}	
+	\item D - Lineare dipendenza
+	\item D - Lineare indipendenza
+	\item D - Base di uno spazio vettoriale 
+	\item D - Dimensione di uno spazio vettoriale
+	\item P - Dato un insieme di vettori, l'insieme di tutte le combinazioni lineari di tali vettori is un sottospazio vettoriale. Esso is uguale all'intersezione di tutti i sottospazi di $V$ che contengono l'insieme dei vettori dati.
+
+	\item P - Un singolo vettore is linearmente dipendente se e solo se si tratta del vettore nullo.
+
+	\item P - Due vettori proporzionali sono linearmente dipendenti.
+
+	\item P - Due o pi\`u vettori sono linearmente indipendenti se e solo se almeno uno di essi si può esprimere come combinazione lineare degli altri. \\
+			  proof.: \\
+			  penso che segua direttamente dalla def.
+
+	\item P - Se un insieme di vettori contiene il vettore nullo allora i vettori sono linearmente dipendenti.
+
+	\item P - Se ad un insieme di vettori linearmente indipendenti togliamo un vettore, il nuovo insieme di vettori is ancora linearmente indipendente. \\	
+Se ad un insieme di vettori linearmente dipendenti aggiungiamo un vettore, il nuovo insieme di vettori is ancora linearmente dipendente.
+
+	\item P - Dato un insieme di vettori linearmente indipendenti, ogni combinazione lineare di tali vettori si scrive in modo unico.
+
+	\item P - Se un insieme di vettori linearmente indipendenti ha un numero di vettori pari alla sua dimensione allora l'insieme is una base. \\	
+		  Se prendo un insieme di vettori linearmente indipendenti, posso sempre completare tale insieme ad una base.
+		\subitem C. Ogni sottospazio vettoriale ha dimensione finita non superiore alla dimensione del sottospazio che lo contiene.
+
+	\item T - Dato un sistema di generatori di $n$ vettori, tutti gli insiemi arbitrari di vettori che siano in numero maggiore di $n$ sono linearmente dipendenti.
+		\begin{enumerate}
+		  	\item C - Tutte le basi di uno spazio vettoriale hanno lo stesso numero di elementi.
+	    \end{enumerate}
+	\item T - Teorema della dimensione
+	
+	%% RANGO
+	\item I - Rango	\\
+	          Se consideriamo le $m$ righe di una matrice come vettori di $K^n$ allora possiamo indagare quanti di questi vettori sono linearmente indipendenti. Tale numero si chiama rango. Dimostreremo pi\`u avanti che il rango delle righe corrisponde al rango per colonne e pertanto parleremo solo di rango di una matrice. \\
+	          Il concetto di rango cos\`i definito \`e molto semplice e ci fornir\`a indicazioni circa gli oggetti collegati ad una certa matrice. Ricordiamo che sono diversi gli oggetti matematici che possono essere ricondotti in forma di matrice, i sistemi lineari per esempio ma anche le applicazioni lineari. Il significato che trascende il mero numero dipende dunque dal contesto, nel caso dei sistemi il rango della matrice associata ha un significato mentre nell'ambito delle applicazioni lineari ha un altro significato. \\
+	          Possiamo osservare che il concetto di rango mette in relazione il concetto di matrice e la teoria degli spazi vettoriali, in particolare, lo spazio vettoriale $K^n$ ovvero lo spazio formato da ennuple di oggetti di un campo $K$. Infatti sia le righe che le colonne considerate come vettori rispettivamente di $K^m$ e $K^n$ sono entrambi spazi vettoriali $K^n$ dove nel primo caso $n=m$ e nel secondo caso $n=n$. Bisogna sempre fare attenzione all'inversione tra $m$ ed $n$. Le $m$ righe, infatti, sono vettori di $K^n$ mentre le $n$ colonne sono vettori di $K^m$.  
+	\item T - Il rango per righe e il rango per colonne di una matrice $A \in M_{m,n}(K)$ coincidono.	
+	\item E - Calcolare il rango di una matrice (sia per righe che per colonne). \\
+			  Per calcolare il rango di una qualsiasi matrice basta trasformare la matrice data in row echelon form e contare il numero delle righe non vuote. Tale numero \`e il rango.
+	\item P - Sia $A \in M_{m,n}(K)$. Se $B \in M{m,n}(K)$ \`e ottenuta da $A$ mediante una successione di operazioni elementari sulle righe, allora $r(A) = r(B)$. \\
+			  Qui sono in gioco le operazioni elementari (o equivalentemente prodotto di matrici per row echelon matrix). Si pu\`o dimostrare per casi, effettuando una sola operazione elementare per tipo. \\
+			  CASO 1 \\
+			  Puoi scambiare algebricamente due righe $A^{(t)}$ e $A^{(s)}$ e dichiarare a parole che il rango di un insieme di vettori non dipende dall'ordine in cui prendo i vettori. In altre parole, se ${v_1,v_2}$ sono lin. ind. (rango 2) allora anche ${v_2, v_1}$ sono lin. ind. (sempre rango 2). \\
+			  CASO 2 \\
+			  Qui dobbiamo pensare al fatto che un vettore "rappresenta" una classe di vettori ovvero con esso possiamo ricavare tutti i suoi multipli allora bisogna dire che: prendiamo due vettori lin. ind. $v_1$ e $v_2$, allora tutti i multipli di $v_1$ sono lin. ind. a $v_2$ e viceversa. \\
+			  Possiamo usare la stessa tecnica del CASO 1 e cio\`e effettuiamo una formalizzazione algebrica e dichiariamo a parole che ancora $r(A)=r(B)$. \\
+			  CASO 3 \\
+			  Qui bisogna utilizzare la doppia inclusione ovvero se $a \subset b$ e $b \subset a$ allora $b=a$. Chi sono $a$ e $b$ in questo contesto? mi sono perso sulle colonne!!! perch\`e c'\`e sempre quel fatto dell'inversione?!!!?	
+	\item P - Relazione tra rango di una matrice e rango del prodotto.
+			  \begin{enumerate}
+			  	\item Se $A$ e $B$ sono due matrici che possono essere moltiplicate, allora $r(AB) \le min(r(A), r(B))$.
+			  	\item Se $A \in GL_m(K)$, $B \in M_{m,n}(K)$, $C \in GL_n(K)$, allora $r(AB)=r(B)=r(BC)$.
+			  \end{enumerate}		  
+	\item T - Una matrice quadrata di ordine $n$ \`e invertibile se e solo se ha rango $n$. \\
+			  proof. \\
+			  ($\Leftarrow$) Supponiamo che una matrice sia invertibile e che il suo rango sia minore di $n$. Siccome \`e invertibile allora non ha righe nulle e pertanto il rango non pu\`o essere minore di $n$, perveniamo ad un assurdo perch\`e per ipotesi avevamo supposto $r<n$. \\
+			  ($\Rightarrow$) Supponiamo che una matrice di rango $r<n$ sia invertibile. Tale matrice, avendo rango minore di $n$ vuol dire che ha una o pi\`u righe nulle. Ma noi sappiamo che moltiplicando una matrice che ha una riga nulla, la matrice risultante avr\`a una corrispondente riga nulla, pertanto non sar\`a mai l'unit\`a e pertanto la matrice non \`e invertibile. Assurdo perch\`e avevamo supposto la matrice invertibile. \\
+			  Chiaramente per concludere il rango non pu\`o essere superiore a $n$, pertanto il rango di una matrice invertibile \`e $n$.
+	\item I - Intuitivamente perch\`e una matrice quadrata di ordine $n$ \`e invertibile se e solo se ha rango $n$? \\
+			  Anzitutto notiamo che il teorema contiene una equivalenza logica tra il rango $n$ della matrice e l'invertibilit\`a. L'invertibilit\`a l'abbiamo vista nelle dichiarazioni recedenti. In simboli $r(A) = n \Leftrightarrow \exists B : AB=BA=I$.	\\
+			  Per quanto riguarda l'invertibilit\`a abbiamo visto nelle dichiarazioni precedenti, quali sono le relazioni tra matrici invertibili, o invertibilit\`a di una matrice, e matrici che hanno una o pi\`u righe nulle (o colonne nulle). \\
+			  In pratica, il teorema, \`e gi\`a un'applicazione del concetto di rango all'invertibilit\`a di una matrice. Ovviamente \`e vero anche il contrario, sapere che una matrice (quadrata) \`e invertibile applicato al concetto di rango mi restituisce un numero. Dal punto di vista logico \`e utile quindi prendere il punto di vista del rango per applicarlo all'invertibilit\`a. Quando abbiamo visto l'invertibilit\`a di una matrice abbiamo notato che quando una matrice ha una riga nulla allora non \`e invertibile. Con il concetto di rango otteniamo una generalizzazione di quel fatto particolare. \\
+			  Osserviamo, ancora, che per essere pronti ad affrontare questo teorema, bisogna prima conoscere per bene le relazioni tra row echelon matrices e matrici invertibili. \\
+			  Algebricamente come faccio a formalizzare quest'idea? difficile da fare, infatti la dimostrazione che ho costruito non fa uso di algebra.
+	\item I - Sottomatrice	
+	\item P - Se $B$ \`e una sottomatrice della matrice $A$, allora $r(B) \le r(A)$. \\
+	 		  proof. \\
+	 		  ma v\`e? \\
+	 		  Si dimostra facendo vedere l'ovviet\`a della relazione prima per righe e poi per colonne. E questo lo puoi fare bene se hai compreso la definizione/il concetto/l'idea di sottomatrice.	
+	\item T - Il rango di una matrice $A$ \`e uguale al massimo degli ordini delle sue sottomatrici quadrate invertibili.	
+	\item T - Kronecker-Rouch\'e-Capelli \\
+	          Un sistema di $m$ equazioni in $n$ incognite $AX=b$, dove $A \in M_{m,n}(K)$, $b \in M_{m,1}(K)$, $X= ^{t}(X_1, ..., X_n)$, \`e compatibile se e solo se $r(A)=r(Ab)$. In tal caso il sistema $AX=b$ possiede $\infty^{n-r}$ soluzioni, dove $r = r(A)$.
+	          
+	\item E - Dimostrare che tutte le matrici $n \times n$ a elementi in $K$ di rango minore o uguale a 1 sono della forma 	(da completare...)
+	
+
+	          
+	%% DETERMINANTE
+	\item D - Determinante	
+	\item T - 
+	
+	\item D - Anello, Ring
+			  \begin{enumerate}
+			  	\item D - (ida) - Un anello \`e una terna ordinata $(A, +, \cdot)$ dove $A$ \`e un insieme non vuoto, $+$ e $\cdot$ sono due operazioni interne tali che
+			  		              \begin{itemize}
+			  		              	\item $(A, +)$ \`e un gruppo commutativo il cui elemento neutro \`e denotato come al solito $0$ o $0_A$;
+			  		              	\item $(A, \cdot)$ \`e un monoide il cui elemento neutro \`e denotato come al solito $1$ o $1_A$;
+			  		              	\item valgono le distributive del prodotto rispetto alla somma: \\
+			  		              	      $a(b+c)=ab+ac$ , $(b+c)a=ba+ca$ $\forall a, b, c \in A$. 
+			  		              \end{itemize}
+			  \end{enumerate}
+	
+	\item D - Caratteristica di un anello
+			  \begin{enumerate}
+			  	\item D - (ida) - Sia $A$ un anello; possiamo considerare l'ordine (il numero, la quantit\`a) dell'elemento $1_A$ nel gruppo $(A,+)$; se tale ordine \`e finito, $|1_A|$ viene detto \emph{la caratteristica di $A$}; se \`e infinito, diciamo che $A$ ha caratteristica $0$. 
+			  	\item N - (ida) - La caratteristica di $A$ viene denotata con $car A$.
+			  \end{enumerate}
+		  
+	\item D - Polynomial
+			  \begin{enumerate}
+			  	\item D - (lang) - Le $R$ be a commutative ring. Let $Pol_R$ be the set of infinite vectors 
+			  	                   \[
+			  	                   		(a_0, a_1, a_2 ..., a_n, ...) 
+			  	                   \]
+			  	                   with $a_n \in R$ and such that all but a finite number of $a_n$ are equal to $0$. \\
+			  	                   Thus a vector looks like 
+			  	                   \[
+			  	                   		(a_0, a_1, ..., a_d, 0,0,0,...)
+			  	                   \]
+			  	                   with zeros all the way to the right. Elements of $Pol_R$ are called \emph{\bfseries{polynomials}} over R. The elements $a_0, a_1, ...$ are called the \emph{coefficients} of the polynomial. The \emph{zero polynomial} is the polynomial $(0,0,...)$ which has $a_i=0$ for all $i$. 
+			  	                   
+			  \end{enumerate}
+\end{enumerate}
+
+\section{Topologia e Analisi}
+	\begin{enumerate}
+		\item I - Parto da questo titolo perch\`e credo che le fondamenta dell'analisi siano da ricercare nella topologia. L'insieme dei numeri reali \`e sicuramente utile nella pratica dove servono risultati numerici.
+		\item I - Prime osservazioni sul concetto di limite. \\
+			  La scrittura $\lim_{x \to a}{f(x)}=L$ vuol dire che avvicinandoci ad $a$ la funzione si avvicina sempre di pi\`u ed inesorabilmente a $L$. Chi sono i personaggi protagonisti di questa storia? In quale contesto si muovono? Senza dubbio il primo protagonista \`e il concetto di funzione (o di successione a seconda) pertanto, in generale, non parliamo semplicemnte di limite ma di limite di qualcosa o qualcuno. Questo qualcosa pu\`o essere una successione oppure una funzione.
+	\end{enumerate}
+
+%% TOPOLOGIA INTUITIVA
+\subsection{Propriet\`a e caratteristiche degli insiemi dotati di metrica o topologia. Propriet\`a e caratteristiche degli elementi di tali insiemi.}
+\begin{enumerate}
+  \item I - Si vogliono costruire degli insiemi i cui elementi non stanno fermi di per se, per esempio un insieme di matite. L'insieme di cui abbiamo bisogno deve essere uno spazio ideale in cui preso, comunque, un sotto insieme di elementi di tali insiemi allora tali sotto insiemi rappresentano un moto, un movimento metafisico. Ma supponiamo pure che sia giusta quest'idea e beh allora tale idea \`e fantastica perch\`e avendo in mano un tale insieme (ossia un insieme che descrive un moto) ci possiamo chiedere che caratteristiche ha tale moto, va verso l'alto? va verso il basso? va verso destra? va verso sinistra? Ho terminato le direzioni spaziali, magari si potrebbe aggiungere una direzione in $n>3$ dimensioni. Si potrebbe, anche, pensare ad una quinta direzione, ossia la direzione che dal punto procede dentro se stesso come un buco nero!!! Ma teniamoci pure sul normale. Come facciamo a stabilire ...
+  \item D - Insieme aperto.
+	\begin{enumerate}
+	  \item D - (giusti) - Un insieme $A \subset R$ si dice aperto se per ogni $x \in A$ esiste un intorno $I(x,r)$ contenuto in $A$.
+	  \item I - (baudo) - Quindi dalla definizione di insieme aperto data da (giusti) possiamo dedurre che un insieme \`e aperto se e solo se per ogni suo elemento esiste un sottoinsieme proprio di $A$ fatto in un certo modo, di un certo tipo, che ha determinate caratteristiche. Altra cosa da notare \`e il fatto che $A$ stesso, gi\`a di per se \`e un sotto insieme di qualche altro insieme ed in particolare dell'insieme dei numeri reali. \\
+	  Veniamo al tipo di sottoinsieme di $A$ che deve esistere per ogni punto al fine di poter completare la definizione ossia tale sotto insieme deve essere un intorno. Di chi? del punto che stiamo considerando, ripeto per ogni elemento deve esistere un intorno del punto. \\
+	  Il fatto del sotto insieme che deve essere di tipo intorno non \`e ancora abbastanza per completare la definizione perch\`e tale intorno (ossia tale sotto insieme) deve essere contenuto in $A$, quindi potrebbe succedere che tutti i punti abbiamo un intorno ma qualcuno di questi intorni non \`e totalmente contenuto in $A$ \\
+	  \item E - Let $R$ Reals \\
+	            Let $A \in R$
+	  \item Q - Che succede se $A = R$? $A$ \`e aperto o chiuso? Se $A$ \`e chiuso qual'\`e un elemento che non ha un intorno totalmente contenuto in $R$? $+\infty$ e $-\infty$ hanno un intorno? Chi \`e?
+	\end{enumerate}
+  \item D - Insieme chiuso.
+	\begin{enumerate}
+	  \item D - (giusti) - Un insieme $D \subset R$ si dice chiuso se il suo complementare \textit{C}D \`e aperto.
+	\end{enumerate}
+  \item D - Derivato di un insieme.
+  \item D - Chiusura di un insieme.
+	\begin{enumerate}
+	  \item D - (giusti) - Si dice chiusura di un insieme $A$ l'intersezione di tutti gli insiemi chiusi che contengono $A$.
+	  \item N - (giusti) - La chiusura di $A$ si indica con $\bar{A}$.
+	  \item I - (giusti) - La chiusura \`e il pi\`u piccolo insieme chiuso (proposizione 5.3) contenente $A$.
+	\end{enumerate}
+  \item T - Relazione tra chiusura e derivato di un insieme.
+	\begin{enumerate}
+	  \item T - (giusti) - La chiusura di $A$ coincide con l'unione di $A$ e del suo derivato:
+		\[
+		      \bar{A} = A \cup \textit{D}A.
+		\]
+	\end{enumerate}
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TOPOLOGIA INTUITITVA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Topologia Intuitiva}
+\begin{enumerate}
+  \item D - Relazione d'ordine tra due elementi in un insieme.
+  \item D - Valore assoluto di un elemento di un insieme.
+  \item D - Distanza tra due elementi di un insieme.
+  \item D - Intorno (di un punto).
+	\begin{enumerate}
+	  \item I - Il titolo della presente definizione potrebbe essere: Intorno di un punto di un insieme dotato di distanza.
+	  \item Q - Esiste il concetto di intorno per gli insiemi che non sono dotati di distanza?
+	  \item O - (baudo) - L'intorno \`e di un punto ma non \`e un punto. Un intorno \`e un insieme.
+	  \item D - (giusti) - Se $x_0 \in R$ e $r>0$, chiameremo intorno sferico di centro $x_0$ e di raggio $r$ l'insieme di tutti i numeri reali che distano da $x_0$ meno di $r$; in simboli:
+	  \item N - (giusti) - $I(x_0,r)=\{x \in R : d(x,x_0)<r\}$.
+	  \item N - (giusti) - $I(x_0,r)=\{x \in R : |x-x_0|<r\}$.
+	\end{enumerate}
+\end{enumerate}
+
+%% SUCCESSIONI
+\subsection{Successioni}
+\begin{enumerate}
+	\item D - (vari) - Successione 
+	      \begin{enumerate}
+		    \item D - (giusti) - Sia $A$ un insieme. Si dice successione a valori in $A$ una legge che a ogni numero intero $n$ associa un elemento di $A$, che indicheremo con $a_n$. 
+		    
+		    \item I - (baudo) - Quindi per il (giusti) una successione \`e una legge. Utilizzando il termine legge (che mi piace) non lascia intendere nulla a proposito dei concetto algebrico di applicazione. Quindi qui non importa che caratteristiche ha tale legge, non si richiede che essa debba essere suriettiva, iniettiva, entrambe o nessuna delle due. Se comunque andiamo a considerare le caratteristiche di tale legge o magari iniziamo a parlare del termine applicazione o funzione allora dobbiamo fare attenzione al fatto che tale legge non potr\`a mai essere suriettiva (si dimostra banalmente - ossia esiste una spiegazione di cui vi dovete rendere conto a prescindere dal formalismo, ossia, va bene se ti trovi nella situazione di non saper formalizzare questa cosa ma l'importante che tu sia "convinto" che una successione non potr\`a mai essere suriettiva). \\
+		    In verit\`a qui si sta compiendo un passaggio. Provo a spiegarlo. Se avete studiato gli spazi vettoriali vi sarete sicuramente accorti che le definizioni degli oggetti sono date a partire dal concetto di insieme, ad esempio, uno spazio vettoriale \`e un insieme etc..., qui invece, (giusti) associa nella definizione il concetto di successione con quello di legge. Niente di strano ma vediamo pi\`u avanti. 
+		    
+		    \item I - (giusti) - In altre parole, una successione \`e un'applicazione, o funzione, di $N$ in $A$.
+		    \item I - (baudo) - Pertanto riconduce (o riduce la portata) del termine legge a quello di applicazione o funzione. Dobbiamo pertanto essere preparati ovvero pronti a cogliere tutti i significati che posso associare a tali concetti.
+		    
+		    \item N - (giusti) - Essa si indicher\`a con il simbolo $\{a_n\}_{n \in N}$ o, pi\`u brevemente, con $\{a_n\}$, o anche $\{a_1, a_2,...,a_n,...\}$
+		    
+		    \item I - (baudo) - La terza notazione del punto precedente \`e quella bastarda proprio perc\`e ci dice che una successione \`e un insieme. Niente di strano si potrebbe osservare, infatti un'applicazione \`e un insieme, per la precisione \`e un sottoinsieme del prodotto cartesiano etc. Per\`o a me non sembra che l'insieme \label{itm:n1} sia un sottoinsieme di qualche prodotto cartesiano. Se guardo bene, mi accorgo che tale insieme \`e, semmai, il codominio e non rappresenta la successione nella sua totalit\`a. 		  				     	
+		    
+		    \item D (baudo) - \label{itm:n2} Sia $A$ un insieme. Una successione a valori in $A$ \`e un sotto insieme di $A$ generato da una legge che a ogni numero intero $n$ associa un elemento di $A$, che indicheremo con $a_n$.
+		    \item O (baudo) - Tutti gli $n \in N$ devono avere un corrispondente valore in $A$. L'insieme dei corrispondenti valori \`e il sotto insieme di cui si parla nella definizione precedente.
+		    \item O (baudo) - Non sempre l'insieme di partenza della successione \`e $N$, a volta si tratta di un suo sotto insieme.
+		    
+		    \item E (baudo) - Sia $A = \{a_1, a_2, a_3, a_4, a_5\}$ un insieme; \\
+				      Sia $B \subset A$ \\
+				      Sia $B = \{a_2,a_4\}$ \\
+				      Allora $B$ \`e una successione la cui legge \`e ignota. \\
+				      Ma allora posso dire che qualunque legge $l:N \to A$ la cui immagine sia uguale a $B$ \`e la legge di successione che genera $B$. Pertanto qui potrei essere in grado di costruire tale leggi. Ed infatti ...
+		    \item I (baudo) - Dall'esempio precedente possiamo estrarre prime propriet\`a delle successioni, ed in particolare come faccio a confrontare due successioni? quando due successioni sono uguali?
+		    
+		    \item I - (acqui) - Si usa il termine "successione" per indicare una sequenza interminabile di elementi presi da un certo insieme.
+
+		    \item I - (baudo) - Cominciamo bene, qui (acqui) parte subito in quarta presentandoci l'idea di sequenza infinita come se non fosse possibile leggere tutto $N$ in un colpo solo. Voglio dire, al matematico, non dovrebbe interessare l'aspetto algoritmico del concetto di sequenza. Allora cerchiamo di parafrasare l'idea di (acqui): si usa il termine "successione" per indicare un qualunque sotto insieme infinito di un insieme dato. Ancora una volta abbiamo ricondotto un concetto al concetto di insieme, allora ci chiediamo perch\`e (acqui) chiama questo insieme infinito (faccio notare che in (giusti) non \`e richiesto che l'insieme sia infinito) sequenza (o successione \`e indifferente)? Trascuriamo per un attimo il termine "interminabile", qual\`e il significato delle frasi "sequenza di un insieme", "insieme sequenza", "sequenza in un insieme"?
+		    
+		    \item D - (baudo) - Una sequenza \`e il moto di un punto. che schifo!!!
+		    
+		    \item D - (acqui) - Sia $X$ un insieme. Una successione a valori in $X$ \`e una funzione $a:N \to X$. Gli elementi $a(0)$, $a(1)$, $a(2)$, eccetera, si dicono termini della successione e si denotano pi\`u brevemente con $a_0$, $a_1$, $a_2$, e cos\`i via. Nel termine generico $a_n$ \`e contenuta la legge di formazione della successione. La successione $a:N \to X$ si denota con $\{a_n\}_{n \in N}$ o anche semplicemente con $\{a_n\}$, \textbf{confondendola impropriamente con l'insieme dei suoi termini}.
+		    
+		    \item I - (baudo) - La parte in grassetto della precedente definizione chiarisce, per fortuna, alcuni dubbi che erano sorti quando avevamo dato la definizione di successione del (giusti).
+	      \end{enumerate}
+		  
+	\item D - (vari) - Limite di una successione. 
+	      \begin{enumerate}
+		  \item D - (baudo) - Il limite di una successione \`e il massimo valore che la successione pu\`o assumere.
+		  
+		  \item D - (baudo) - Il limite di una successione \`e il massimo dell'immagine dell'applicazione che rappresenta la successione. 
+		  
+		  \item D - (baudo) - Se l'immagine di una successione non ha massimo allora la successione \`e divergente altrimenti si dice convergente.
+		  
+		  \item I - (baudo) - L'idea di queste prime tre definizioni \`e quella di trovare un modo per manipolare algebricamente e con facilit\`a l'oggetto limite di una successione.
+		  
+		  \item I - (giusti) - Possiamo ora ricavare dagli esempi riportati nel paragrafo precedente una definizione rigorosa di limite di una successione.
+		  
+		  \item I - (baudo) - Quindi (giusti) ci invita a prendere dimistichezza con le varie successioni che potete trovare nelle tavole riassuntive. Per ciascuna successione bisogna saperne calcolare il limite ed essere in grado di manipolarla nel caso in cui, invece, bisogna saper dimostrare che essa \`e uguale a un qualche limite dato.
+		  
+		  \item D - (giusti) - Sia $\{a_n\}_{n \in N}$ una successione a valori reali e sia $L \in R$. Si dir\`a che il limite della successione $a_n$, per $n$ tendente all'infinito, \`e $L$ e si scriver\`a
+		  \[
+			  \lim_{n \to \infty}{a_n} = L,
+		  \]
+		  se, per ogni intorno $I(L, r)$ di $L$, esiste un numero reale $v$, tale che per ogni intero $n>v$ si abbia $a_n \in I(L,r)$.
+		  
+		  \item I - (giusti) - La definizione precedente pu\`o essere riformulata variamente. Non \`e difficile constatare ad esempio, che le seguenti due  definizioni sono equivalenti alla precedente.
+		  
+		  \item D - (giusti) - 
+		  \item D - (giusti) - 
+		  
+	      \end{enumerate}
+	      
+	\item D - (giusti) - Successione convergente. \\
+	      Una successione che ha limite finito si dice anche convergente.
+				   
+	\item S - (skill) - Saper calcolare il limite di una successione (con gli escamotage pi\`u assurdi).
+	\item S - (skill) - Saper dimostrare che una successione ha un certo limite.	
+	
+	\item P - (vari) - Unicit\`a del limite di una successione. 
+	          \begin{enumerate}
+	          	\item P - (giusti) - Una successione non pu\`o avere pi\`u di un limite.
+	          \end{enumerate}
+	\item P - (giusti) - Una successione convergente \`e limitata.
+	
+	\item P - Sottosuccessioni di successioni convergenti. 
+	      \begin{enumerate}
+		\item P - (baudo) - Sottosuccessioni di successioni convergenti sono convergeneti e convergono tutte allo stesso limite della successione convergente.
+		\item P - (lanco) - Sia $(a_n)$ una successione in $R$ convergente ad $l(\in R)$. Allora ogni sottosuccessione $a_{k_n}$ di $(a_n)$ converge ad $l$.
+	      \end{enumerate}	
+
+	\item T - Relazione tra successione e chiusura di un insieme.
+	      \begin{enumerate}
+		      \item T - (giusti) - Sia $A$ un insieme di $R$. Un punto $x_0$ di $R$ appartiene alla chiusura di $A$ se e solo se esiste una successione $\{x_n\}$ a valori in $A$ che tende a $x_0$
+	      \end{enumerate}						    
+\end{enumerate}
+
+\section{Tavole Riassuntive}
+\begin{enumerate}
+	\item Successioni in forma di legge \\
+	Servono per prendere dimistichezza con le successioni che si incontrano nella pratica. Provate a sviluppare numericamente sequenze in modo da sapere gi\`a a priori come si comportano.
+		\begin{itemize}
+			\item $n$
+			\item $n^2$
+			\item $n!$, qui devo conoscere la teoria dei coefficienti binomiali, ci portano a saper dimostrare fatti che riguardano funzioni fattoriali che sono importani come fatti particolari della teoria generale delle successioni. Altrimenti finisce la matematica e comincia la tecnica. Il problema nasce dal fatto che ci vogliamo complicare la vita perch\`e vogliamo conoscere a priori, ovvero senza fare tutti i calcoli a mano ma semplicemente applicare una formlua, il risultato della somma di tutti i termini della seguenza e cominciare ad indagare le propriet\`a di tale somma e di come posso confrontare (relazionare) tale somma con altre somme. Come siamo finiti dalla definizione di sequenza (successione) alle somme? Il limite di una successione invece mi riporta alla mia dimensione normale ovvero considero soltanto la successione e non la somma dei suoi termini.
+			\item $n^p$, non ne usciamo pi\`u
+		\end{itemize}
+	\item Successioni in forma di insieme \\
+\end{enumerate}
+
+\section{Human-Computer Interaction (HCI)}
+L'interazione persona-computer \`e una branca della logica. Pi\`u in particolare \`e si tratta di un'applicazione della teoria degli insiemi. Supponiamo di avere un insieme $P$ delle parti delle persona... 
+
+\end{document}
